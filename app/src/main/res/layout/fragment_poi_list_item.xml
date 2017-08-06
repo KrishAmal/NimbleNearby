@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="3dp"
+    android:baselineAligned="false"
+    android:background="?android:attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill"
+        android:background="@drawable/list_item_bg"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:baselineAligned="false">
+
+        <RelativeLayout
+            android:id="@+id/poi_list_item_main_layout"
+            android:layout_weight="4"
+            android:layout_width="0dp"
+            android:layout_gravity="fill"
+            android:minWidth="100dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:layout_height="wrap_content"
+            android:clickable="true">
+
+            <LinearLayout
+                android:id="@+id/poi_list_item_name_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/poi_list_item_name_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/poi_list_item_name_icon"
+                    android:src="@drawable/map_marker"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp" />
+
+                <TextView
+                    android:id="@+id/poi_list_item_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/poi_list_item_dist_linear"
+                android:layout_below="@id/poi_list_item_name_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="invisible"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/poi_list_item_dist_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/poi_list_item_dist_icon"
+                    android:src="@drawable/ray_start_end" />
+
+                <TextView
+                    android:id="@+id/poi_list_item_distance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:paddingTop="3dp"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/poi_list_item_vic_linear"
+                android:orientation="horizontal"
+                android:layout_below="@id/poi_list_item_dist_linear"
+                android:layout_width="match_parent"
+                android:baselineAligned="false"
+                android:layout_height="wrap_content"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/poi_list_item_vic_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/poi_list_item_vic_icon"
+                    android:src="@drawable/home_map_marker" />
+
+                <TextView
+                    android:id="@+id/poi_list_item_vicinity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_vertical"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:paddingTop="3dp"
+                    android:textColor="@color/text_grey"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/poi_list_item_direction_layout"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:id="@+id/poi_list_item_icon"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:contentDescription="@string/poi_list_item_icon"
+                android:layout_marginStart="8dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:tint="@color/colorAccent"
+                android:src="@drawable/ic_directions_black_48dp"
+
+                android:background="@null" />
+
+            <TextView
+                android:id="@+id/poi_list_item_direction_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingTop="5dp"
+                android:layout_below="@id/poi_list_item_icon"
+                android:textColor="@color/colorAccentDark"
+                android:text="@string/direction"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="review_item_padding">5dp</dimen>
+
+    <dimen name="recycler_view_top_padding">8dp</dimen>
+
+    <!--Main Cardview-->
+    <dimen name="main_card_corner_radius">8dp</dimen>
+    <dimen name="main_card_margin_bottom">8dp</dimen>
+    <dimen name="main_card_icon_dimen">90dp</dimen>
+    <dimen name="main_card_name_size">16sp</dimen>
+    <dimen name="main_card_name_padding">8dp</dimen>
+
+    <!--Poi Cardview-->
+    <dimen name="poi_card_padding_bottom">8dp</dimen>
+    <dimen name="poi_card_padding_top">5dp</dimen>
+    <dimen name="poi_card_corner_radius">8dp</dimen>
+    <dimen name="poi_card_top_layout_height">220dp</dimen>
+    <dimen name="poi_card_gradient_height">80dp</dimen>
+    <dimen name="poi_card_fav_layout_padding_end">70dp</dimen>
+    <dimen name="poi_card_fav_layout_padding_bottom">10dp</dimen>
+    <dimen name="poi_card_addn_btn_size">36dp</dimen>
+    <dimen name="poi_card_share_layout_padding_start">70dp</dimen>
+    <dimen name="poi_card_share_layout_padding_bottom">10dp</dimen>
+    <dimen name="poi_card_no_image_size">56dp</dimen>
+    <dimen name="poi_card_no_image_margin_bottom">20dp</dimen>
+    <dimen name="poi_card_no_image_text_size">16sp</dimen>
+    <dimen name="poi_card_no_image_text_margin_top">20dp</dimen>
+    <dimen name="poi_card_review_list_margin_bottom">10dp</dimen>
+    <dimen name="poi_card_review_text_margin_bottom">10dp</dimen>
+    <dimen name="poi_card_call_text_margin_top">5dp</dimen>
+    <dimen name="poi_card_call_text_margin_bottom">10dp</dimen>
+    <dimen name="poi_card_phone_padding_start">5dp</dimen>
+    <dimen name="poi_card_phone_layout_margin_top">5dp</dimen>
+    <dimen name="poi_card_phone_layout_margin_bottom">10dp</dimen>
+    <dimen name="poi_card_phone_text_size">16sp</dimen>
+    <dimen name="poi_card_direction_margin_top_bottom">5dp</dimen>
+    <dimen name="poi_card_address_text_size">16sp</dimen>
+    <dimen name="poi_card_address_margin_top_bottom">5dp</dimen>
+    <dimen name="poi_card_address_padding_start">5dp</dimen>
+    <dimen name="poi_card_name_size">25sp</dimen>
+    <dimen name="poi_card_name_margin_top_bottom">5dp</dimen>
+
+    <!--Search Item-->
+    <dimen name="search_item_padding_start">16dp</dimen>
+    <dimen name="search_item_padding_bottom">3dp</dimen>
+    <dimen name="search_item_name_padding_start">16dp</dimen>
+    <dimen name="search_item_name_padding_bottom_top">10dp</dimen>
+    <dimen name="search_item_name_size">20sp</dimen>
+
+    <!--Widget-->
+    <dimen name="widget_header_name_textsize">22sp</dimen>
+    <dimen name="widget_header_height">60dp</dimen>
+    <dimen name="widget_header_padding">10dp</dimen>
+    <dimen name="widget_direction_icon_size">48dp</dimen>
+    <dimen name="widget_direction_icon_left_margin">8dp</dimen>
+    <dimen name="widget_direction_icon_top_margin">3dp</dimen>
+    <dimen name="widget_direction_icon_bottom_margin">2dp</dimen>
+    <dimen name="widget_name_textsize">18sp</dimen>
+    <dimen name="widget_name_margin">4dp</dimen>
+    <dimen name="widget_vicinity_margin">3dp</dimen>
+    <dimen name="widget_vicinity_textsize">14sp</dimen>
+    <dimen name="widget_layout_padding">5dp</dimen>
+    <dimen name="widget_layout_minwidth">200dp</dimen>
+
+    <!--Misc-->
+    <dimen name="horiontal_margin_bottom">10dp</dimen>
+</resources>

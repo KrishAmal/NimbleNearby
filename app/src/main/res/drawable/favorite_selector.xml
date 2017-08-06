@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_checked="false" android:state_window_focused="false"
+        android:drawable="@drawable/heart_outline"/>
+    <item android:state_checked="true" android:state_window_focused="false"
+        android:drawable="@drawable/heart"/>
+
+
+    <item
+        android:drawable="@drawable/heart_outline"
+        android:state_checked="false" />
+
+    <item
+        android:drawable="@drawable/heart"
+        android:state_checked="true" />
+
+
+</selector>

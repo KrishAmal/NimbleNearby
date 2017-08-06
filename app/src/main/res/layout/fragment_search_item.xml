@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="@dimen/search_item_padding_start"
+    android:paddingEnd="@dimen/search_item_padding_start"
+    android:paddingBottom="@dimen/search_item_padding_bottom"
+    android:background="?android:attr/selectableItemBackground">
+
+    <TextView
+        android:id="@+id/search_item_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/search_item_name_size"
+        android:textColor="@color/colorPrimary"
+        android:paddingStart="@dimen/search_item_name_padding_start"
+        android:paddingEnd="@dimen/search_item_name_padding_start"
+        android:paddingBottom="@dimen/search_item_name_padding_bottom_top"
+        android:paddingTop="@dimen/search_item_name_padding_bottom_top"
+        android:focusable="true"/>
+
+</LinearLayout>

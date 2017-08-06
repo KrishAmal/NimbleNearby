@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">NimbleNearby</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="image_action">Point of Interest Image</string>
+
+    <string name="send_to">Share text to..</string>
+
+    <string name="table_name">pois</string>
+
+    <string name="base_url">https://maps.googleapis.com/</string>
+
+    <!--POI Names-->
+    <string name="atm">ATM</string>
+    <string name="hosp">Hospital</string>
+    <string name="logding">Lodging</string>
+    <string name="movie">Movie Theater</string>
+    <string name="restaurant">Restaurant</string>
+    <string name="cafe">Cafe</string>
+    <string name="bakery">Bakery</string>
+    <string name="bus">Bus Station</string>
+    <string name="lib">Library</string>
+    <string name="mall">Shopping Mall</string>
+    <string name="taxi">Taxi Stand</string>
+    <string name="pharmacy">Pharmacy</string>
+    <string name="park">Park</string>
+    <string name="parking">Parking</string>
+
+    <!--MainActivity-->
+    <string name="set_location">Location Permission not granted</string>
+    <string name="no_internet">No Internet Connection</string>
+    <string name="home">Home</string>
+    <string name="favorite">Favorite</string>
+
+    <string name="no_image">No Image Found</string>
+    <string name="direction">DIRECTIONS</string>
+    <string name="call">CALL</string>
+    <string name="review">REVIEWS</string>
+
+    <!--Card Fragment-->
+    <string name="no_address_text">No Address Available</string>
+    <string name="no_phone_text">No Phone Available</string>
+    <string name="fav">Added to Favorites</string>
+    <string name="unfav">Deleted from Favorites</string>
+
+    <!--Content Descriptions-->
+    <string name="poi_list_item_name_icon">Name</string>
+    <string name="poi_list_item_dist_icon">Distance</string>
+    <string name="poi_list_item_vic_icon">Vicinity</string>
+    <string name="poi_list_item_icon">Directions</string>
+    <string name="card_view_addr_icon">Address</string>
+    <string name="card_view_phone_icon">Phone Number</string>
+    <string name="card_view_fav_btn">Favorites</string>
+    <string name="card_view_share_btn">Share</string>
+    <string name="card_view_image">Image</string>
+
+    <string name="progress_dialog_title">Fetching Results</string>
+    <string name="progress_dialog_message">Just a moment </string>
+    <string name="alert_dialog_message">Result Fetch Failed</string>
+
+    <string name="roboto_light">Roboto-Light.ttf</string>
+    <string name="roboto_regular">Roboto-Regular.ttf</string>
+
+</resources>

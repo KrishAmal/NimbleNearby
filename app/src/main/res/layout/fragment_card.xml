@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clipToPadding="false">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/poi_card_padding_top"
+        android:clipToPadding="false"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardCornerRadius="@dimen/poi_card_corner_radius">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/poi_card_top_layout_height"
+            android:orientation="vertical">
+
+        <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal">
+
+                <ImageView
+                    android:id="@+id/card_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/card_view_image"
+                    android:background="@color/flatWhite"
+                    />
+
+            <View
+                android:id="@+id/card_gradient"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_gravity="bottom"
+                android:visibility="invisible"
+                android:background="@drawable/gradient"/>
+
+            <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="@dimen/poi_card_fav_layout_padding_end"
+                    android:paddingBottom="@dimen/poi_card_fav_layout_padding_bottom">
+
+                    <ToggleButton
+                        android:id="@+id/card_fav_btn"
+                        android:layout_width="@dimen/poi_card_addn_btn_size"
+                        android:layout_height="@dimen/poi_card_addn_btn_size"
+                        android:layout_gravity="center"
+                        android:background="@drawable/favorite_selector"
+                        android:backgroundTint="@color/colorAccent"
+                        android:contentDescription="@string/card_view_fav_btn"
+                        android:focusable="true"
+                        android:textOn=" "
+                        android:textOff=" " />
+
+                </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="0dp"
+                android:paddingStart="@dimen/poi_card_share_layout_padding_start"
+                android:layout_gravity="bottom|center_horizontal"
+                android:paddingBottom="@dimen/poi_card_share_layout_padding_bottom">
+
+                <ImageView
+                    android:id="@+id/card_share_btn"
+                    android:layout_width="@dimen/poi_card_addn_btn_size"
+                    android:layout_height="@dimen/poi_card_addn_btn_size"
+                    android:layout_gravity="center"
+                    android:background="@drawable/share"
+                    android:focusable="true"
+                    android:contentDescription="@string/card_view_share_btn"
+                    android:backgroundTint="@color/colorAccent" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/card_no_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="@dimen/poi_card_no_image_size"
+                    android:layout_height="@dimen/poi_card_no_image_size"
+                    android:src="@drawable/image_area"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/no_image"
+                    android:layout_marginBottom="@dimen/poi_card_no_image_margin_bottom"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no_image"
+                    android:textSize="@dimen/poi_card_no_image_text_size"
+                    android:textColor="@color/no_image_bg"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/poi_card_no_image_text_margin_top"/>
+
+            </FrameLayout>
+
+        </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|end"
+            android:orientation="vertical"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp">
+
+            <TextView
+                android:id="@+id/card_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/poi_card_name_margin_top_bottom"
+                android:layout_marginBottom="@dimen/poi_card_name_margin_top_bottom"
+                android:textSize="@dimen/poi_card_name_size"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/card_address_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/card_view_addr_icon"
+                        android:src="@drawable/home_map_marker"/>
+
+                   <TextView
+                       android:id="@+id/card_address"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:paddingStart="@dimen/poi_card_address_padding_start"
+                       android:paddingEnd="@dimen/poi_card_address_padding_start"
+                       android:layout_marginTop="@dimen/poi_card_address_margin_top_bottom"
+                       android:layout_marginBottom="@dimen/poi_card_address_margin_top_bottom"
+                       android:textSize="@dimen/poi_card_address_text_size"
+                       android:textColor="@color/black"
+                       android:focusable="true"
+                       android:layout_weight="1"
+                       />
+
+                    <TextView
+                        android:id="@+id/card_direction"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/poi_card_direction_margin_top_bottom"
+                        android:layout_marginBottom="@dimen/poi_card_direction_margin_top_bottom"
+                        android:text="@string/direction"
+                        android:gravity="end"
+                        android:layout_weight="2"
+                        android:focusable="true"
+                        android:nextFocusLeft="@id/card_address"
+                        android:textColor="@color/colorAccent"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/card_phone_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/card_view_phone_icon"
+                        android:src="@drawable/phone"/>
+
+                <TextView
+                    android:id="@+id/card_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:paddingStart="@dimen/poi_card_phone_padding_start"
+                    android:paddingEnd="@dimen/poi_card_phone_padding_start"
+                    android:layout_marginTop="@dimen/poi_card_phone_layout_margin_top"
+                    android:layout_marginBottom="@dimen/poi_card_phone_layout_margin_bottom"
+                    android:textSize="@dimen/poi_card_phone_text_size"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:id="@+id/card_call"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/poi_card_call_text_margin_top"
+                    android:layout_marginBottom="@dimen/poi_card_call_text_margin_bottom"
+                    android:layout_weight="1"
+                    android:text="@string/call"
+                    android:gravity="end"
+                    android:textColor="@color/colorAccent"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="@dimen/horiontal_margin_bottom"
+                    android:background="@color/black"
+                    android:alpha="0.1"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/poi_card_review_text_margin_bottom"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/review_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:focusable="true"
+                        android:text="@string/review"
+                        android:textColor="@color/colorAccent"/>
+
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/review_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/poi_card_review_list_margin_bottom"
+                    android:focusable="true"
+                    android:nextFocusUp="@id/review_text"
+                    android:clipToPadding="false">
+                </android.support.v7.widget.RecyclerView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
